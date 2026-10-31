@@ -1,0 +1,42 @@
+
+
+  █ THRESHOLDS 
+
+    checks
+    ✓ 'rate>0.97' rate=100.00%
+
+    http_req_duration
+    ✓ 'p(95)<1500' p(95)=439.95ms
+
+    http_req_failed
+    ✓ 'rate<0.03' rate=0.00%
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 10800   59.887095/s
+    checks_succeeded...: 100.00% 10800 out of 10800
+    checks_failed......: 0.00%   0 out of 10800
+
+    ✓ status es 200 o 201
+    ✓ respuesta incluye token
+    ✓ tiempo de respuesta < 1,5 s
+
+    HTTP
+    http_req_duration..............: avg=361.1ms  min=321.59ms med=346.42ms max=1.01s p(90)=400.34ms p(95)=439.95ms
+      { expected_response:true }...: avg=361.1ms  min=321.59ms med=346.42ms max=1.01s p(90)=400.34ms p(95)=439.95ms
+    http_req_failed................: 0.00%  0 out of 3600
+    http_reqs......................: 3600   19.962365/s
+
+    EXECUTION
+    iteration_duration.............: avg=361.74ms min=321.59ms med=346.89ms max=1.01s p(90)=401.47ms p(95)=439.95ms
+    iterations.....................: 3600   19.962365/s
+    vus............................: 7      min=6         max=18
+    vus_max........................: 50     min=50        max=50
+
+    NETWORK
+    data_received..................: 2.3 MB 13 kB/s
+    data_sent......................: 494 kB 2.7 kB/s
+
+
+

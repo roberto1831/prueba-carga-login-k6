@@ -1,0 +1,79 @@
+CONCLUSIONES
+============
+
+RESUMEN DE LA EJECUCIÓN
+-----------------------
+
+La prueba de rendimiento fue ejecutada utilizando K6 con un escenario
+de carga constante de 20 transacciones por segundo (TPS) durante un
+periodo de 3 minutos.
+
+Durante la ejecución se procesaron aproximadamente 3.600 solicitudes
+HTTP, manteniendo una tasa cercana a 20 solicitudes por segundo y
+cumpliendo con el objetivo de carga definido para el ejercicio.
+
+RESULTADOS OBTENIDOS
+--------------------
+
+- Throughput promedio: 19.96 req/s
+- Solicitudes procesadas: 3.600
+- Tiempo promedio de respuesta: 361.10 ms
+- Percentil 95 (p95): 439.95 ms
+- Tiempo máximo observado: 1.01 s
+- Tasa de errores: 0.00 %
+- Checks exitosos: 100 %
+
+EVALUACIÓN DE CRITERIOS DE ACEPTACIÓN
+-------------------------------------
+
+1. Throughput
+   Objetivo: 20 TPS
+   Resultado: 19.96 req/s
+   Estado: CUMPLE
+
+2. Tiempo de respuesta
+   Objetivo: p95 < 1500 ms
+   Resultado: 439.95 ms
+   Estado: CUMPLE
+
+3. Tasa de errores
+   Objetivo: < 3 %
+   Resultado: 0.00 %
+   Estado: CUMPLE
+
+4. Validaciones funcionales
+   Objetivo: > 97 %
+   Resultado: 100 %
+   Estado: CUMPLE
+
+CONCLUSIONES FINALES
+--------------------
+
+El servicio de autenticación evaluado presentó un comportamiento estable
+durante toda la ejecución de la prueba.
+
+Los tiempos de respuesta se mantuvieron ampliamente por debajo del límite
+establecido de 1.5 segundos, incluso en los percentiles más altos
+analizados.
+
+No se registraron errores durante la ejecución, lo que evidencia una
+correcta disponibilidad y estabilidad del servicio bajo la carga aplicada.
+
+Las validaciones funcionales alcanzaron una tasa de éxito del 100 %,
+confirmando que las respuestas obtenidas fueron correctas y que el token
+de autenticación fue generado adecuadamente.
+
+RESULTADO FINAL
+---------------
+
+✓ TPS Objetivo: Cumplido
+
+✓ p95 < 1500 ms: Cumplido
+
+✓ Error Rate < 3 %: Cumplido
+
+✓ Checks > 97 %: Cumplido
+
+La prueba se considera APROBADA, ya que el servicio cumple
+satisfactoriamente con todos los criterios de aceptación definidos para
+el escenario de rendimiento propuesto.
