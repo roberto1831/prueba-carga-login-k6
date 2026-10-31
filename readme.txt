@@ -32,7 +32,9 @@ scripts/login-load-test.js
     Script principal de la prueba de carga
 
 reports/
-    Directorio de resultados de ejecución
+    report.html
+    summary.json
+    resumen-consola.txt
 
 readme.txt
     Documentación del proyecto
@@ -53,7 +55,7 @@ conclusiones.txt
 
 3) Clonar el repositorio:
 
-   git clone https://github.com/[TU-USUARIO]/prueba-carga-login-k6.git
+   git clone https://github.com/roberto1831/prueba-carga-login-k6.git
 
 4) Ingresar al proyecto:
 
@@ -75,7 +77,6 @@ conclusiones.txt
 
 8) Revisar los resultados:
 
-   - Verificar que los thresholds aparezcan como PASS.
    - Verificar que el throughput sea cercano a 20 req/s.
    - Verificar que p(95) sea menor a 1500 ms.
    - Verificar que la tasa de errores sea menor al 3 %.
@@ -116,7 +117,6 @@ Ejemplo:
 7. RESULTADOS ESPERADOS
 -----------------------
 
-- Los thresholds deben aparecer en estado PASS.
 - El throughput debe mantenerse cercano a 20 req/s.
 - El percentil 95 debe ser menor a 1500 ms.
 - La tasa de errores debe ser menor al 3 %.
@@ -146,7 +146,8 @@ Ejemplo:
 9. AUTOR
 --------
 
-Ing.Roberto Fernando Toapanta Valencia
+Ing. Roberto Fernando Toapanta Valencia
 
 Prueba técnica de Performance Testing desarrollada con K6.
+
 Proyecto implementado utilizando WebStorm, PowerShell y Git.
